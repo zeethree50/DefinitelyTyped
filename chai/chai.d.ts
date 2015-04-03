@@ -280,6 +280,10 @@ declare module chai {
     }
 }
 
+interface Object {
+    should: chai.Expect;
+}
+
 declare module "chai" {
     export = chai;
 }
